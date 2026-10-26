@@ -69,3 +69,21 @@ All data will be synthetic and created for learning and portfolio demonstration.
 The project does not represent an actual company's HRIS implementation. Data-quality flags identify records requiring review; they do not automatically establish that the underlying records are factually incorrect.
 
 Reporting results will be documented with their definitions, assumptions, and limitations.
+
+## Project Documentation
+
+### HRIS Data Quality Findings
+
+The initial SQL audit results, key data-quality issues, and recommended follow-up actions are documented in the following report:
+
+[Read the HRIS Data Quality Findings](reports/data_quality_findings.md)
+
+### SQL Analysis
+
+The SQL validation script used to profile employee records and identify data-quality exceptions is available here:
+
+[View the SQL Data Quality Profile](data/sql/01_data_quality_profile.sql)
+
+### Dataset Disclaimer
+
+This project uses synthetic HR data for portfolio learning. The findings do not describe a real organisation.
