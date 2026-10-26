@@ -55,11 +55,22 @@ The project will follow a documented workflow:
 
 ## Repository Structure
 
-The repository will contain:
-
-- `data/` — synthetic source dataset.
-- `sql/` — data profiling, validation, and reporting queries.
-- `README.md` — project documentation and methodology.
+```text
+hris-data-quality-people-reporting/
+├── data/
+│   ├── employees_raw.csv
+│   ├── hris_data_dictionary.md
+│   └── sql/
+│       ├── 01_data_quality_profile.sql
+│       └── README.md
+├── reports/
+│   └── data_quality_findings.md
+└── README.md
+```
+- `data/` — synthetic HR employee dataset and data dictionary.
+- `data/sql/` — SQL scripts for data profiling and quality validation.
+- `reports/` — documented data-quality findings and recommended actions.
+- `README.md` — project overview, objectives, methodology, and documentation links.
 
 ## Data Privacy and Limitations
 
