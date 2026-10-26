@@ -59,7 +59,6 @@ The repository will contain:
 
 - `data/` — synthetic source dataset.
 - `sql/` — data profiling, validation, and reporting queries.
-- `screenshots/` — dashboard previews.
 - `README.md` — project documentation and methodology.
 
 ## Data Privacy and Limitations
