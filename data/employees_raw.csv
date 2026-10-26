@@ -1,0 +1,251 @@
+﻿EmployeeID,HireDate,TerminationDate,EmploymentStatus,Department,JobLevel,JobTitle,MonthlySalaryEUR,PerformanceRating,ManagerID,Country,EmploymentType
+EMP0001,2020-07-21,,Active,Product,1,HR Assistant,2910,2,,Brazil,Part-time
+EMP0002,2020-02-27,,Active,Operations,2,People Reporting Analyst,3300,4,,Brazil,Full-time
+,2020-06-14,,Active,Sales,1,HR Assistant,2060,4,,Germany,Full-time
+EMP0004,2023-11-20,,Active,IT,1,HR Assistant,1940,3,,Brazil,Part-time
+EMP0005,2021-08-09,,Active,Product,1,HR Assistant,2760,3,,Spain,Contract
+EMP0006,2024-04-28,,Active,Product,3,Senior HRIS Analyst,4090,4,,Canada,Part-time
+EMP0006,2021-06-22,,On Leave,Engineering,1,Data Support Analyst,2840,4,,Netherlands,Full-time
+EMP0008,2022-05-21,,Active,Operations,3,Senior HRIS Analyst,4160,4,,Brazil,Full-time
+EMP0009,2024-08-27,2025-06-26,Terminated,Operations,3,Senior HRIS Analyst,5070,3,EMP0002,Germany,Full-time
+EMP0010,2023-11-24,,Active,Operations,1,Data Support Analyst,2960,2,EMP0001,Brazil,Full-time
+EMP0011,,2025-12-01,Terminated,Product,5,People Analytics Principal,7800,3,EMP0004,Germany,Full-time
+EMP0012,2026-15-40,,Active,Customer Success,3,Senior HR Analyst,4340,4,EMP0007,Canada,Full-time
+EMP0013,2023-10-21,2023-09-21,Terminated,Finance,5,HR Director,7500,3,EMP0002,Netherlands,Full-time
+EMP0014,2022-02-28,2025-04-10,Active,Sales,3,Senior People Analyst,4220,4,EMP0005,Germany,Full-time
+EMP0015,2025-11-29,,Terminated,Customer Success,1,Data Support Analyst,2640,3,EMP0006,Brazil,Full-time
+EMP0016,2019-08-21,,Retained,Operations,4,People Analytics Lead,5150,3,EMP0007,Canada,Full-time
+EMP0017,2023-02-13,,Active,,1,HR Assistant,2200,4,EMP0007,Spain,Full-time
+EMP0018,2025-05-26,,Active,Human Capital,2,HR Analyst,3980,2,EMP0006,Netherlands,Full-time
+EMP0019,2024-04-30,2025-04-13,Terminated,Customer Success,3,Senior HR Analyst,0,3,EMP0002,Germany,Full-time
+EMP0020,2025-11-12,2026-10-01,Terminated,Human Resources,1,Junior Analyst,-250,4,EMP0001,France,Full-time
+EMP0021,2023-04-03,2024-08-16,Terminated,IT,1,Data Support Analyst,99999,4,EMP0006,Spain,Full-time
+EMP0022,2024-04-06,,Active,Sales,0,Data Support Analyst,2240,2,EMP0006,Netherlands,Full-time
+EMP0023,2018-10-29,2019-10-23,Terminated,Customer Success,6,HR Assistant,2510,3,EMP0007,Brazil,Part-time
+EMP0024,2020-10-18,,Active,Customer Success,2,People Reporting Analyst,4030,0,EMP0002,Spain,Full-time
+EMP0025,2018-01-10,,Active,Finance,3,Senior HRIS Analyst,3660,6,EMP0002,Portugal,Full-time
+EMP0026,2024-06-26,2025-10-31,Terminated,Sales,5,People Analytics Principal,8610,1,EMP9999,Netherlands,Full-time
+EMP0027,2026-03-04,,Active,IT,1,Junior Analyst,2700,3,EMP0027,Canada,Full-time
+EMP0028,2025-04-06,,Active,Human Resources,2,People Reporting Analyst,,4,EMP0004,France,Full-time
+EMP0029,2024-08-14,,,Sales,1,HR Assistant,1980,3,EMP0007,Brazil,Part-time
+EMP0030,2019-08-08,,Active,Human Resources,2,HRIS Specialist,2620,1,EMP0006,Portugal,
+EMP0031,2027-01-15,,Active,Product,1,Junior Analyst,2210,3,EMP0004,Canada,Contract
+EMP0032,2023-09-15,2027-05-03,Terminated,Product,4,HR Manager,6220,3,EMP0008,France,Full-time
+EMP0033,2019-11-17,,Active,Human Resources,2,HRIS Specialist,2700,4,EMP0002,,Full-time
+EMP0034,2019-12-20,2026-08-01,Terminated,Sales,2,HR Analyst,3500,3,EMP0008,Atlantis,Full-time
+EMP0035,2018-10-25,,Active,Operations,1,HR Systems Director,4790,3,EMP0001,Netherlands,Full-time
+EMP0036,2019-10-17,2025-07-01,On Leave,Human Resources,2,HRIS Specialist,4180,2,EMP0007,France,Full-time
+EMP0037,2026-10-14,,Active,IT,4,HRIS Manager,5200,2,EMP0005,Spain,Full-time
+EMP0038,2023-01-30,,Active,IT,3,Senior HR Analyst,5310,2,EMP0006,Brazil,Full-time
+EMP0039,2020-08-02,2026-03-27,Terminated,Human Resources,3,Senior People Analyst,5300,5,EMP0002,Netherlands,Full-time
+EMP0040,2021-08-08,,Active,Operations,2,HRIS Specialist,3060,3,EMP0005,Netherlands,Full-time
+EMP0041,2025-10-09,2026-06-21,Terminated,Finance,3,Senior HR Analyst,4860,4,EMP0001,Ireland,Full-time
+EMP0042,2021-09-12,,Active,Customer Success,2,HR Analyst,3460,5,EMP0007,Brazil,Full-time
+EMP0043,2020-09-24,,Active,Customer Success,4,HR Manager,6680,4,EMP0001,Portugal,Full-time
+EMP0044,2020-07-15,,Active,Engineering,2,People Reporting Analyst,3330,3,EMP0004,Portugal,Full-time
+EMP0045,2026-06-12,,Active,IT,2,People Reporting Analyst,3720,4,EMP0007,France,Full-time
+EMP0046,2020-12-29,2021-10-22,Terminated,Finance,2,HRIS Specialist,3070,3,EMP0005,Netherlands,Full-time
+EMP0047,2019-10-06,,Active,IT,1,HR Assistant,2640,2,EMP0007,Canada,Full-time
+EMP0048,2025-12-06,,Active,IT,1,HR Assistant,2090,3,EMP0008,France,Full-time
+EMP0049,2021-08-01,,On Leave,Finance,4,People Analytics Lead,5040,5,EMP0004,Germany,Full-time
+EMP0050,2025-02-17,2025-12-23,Terminated,Sales,4,HRIS Manager,5470,5,EMP0006,France,Full-time
+EMP0051,2021-04-10,,Active,Engineering,2,People Reporting Analyst,2760,3,EMP0006,Canada,Full-time
+EMP0052,2020-02-01,,Active,Operations,3,Senior HR Analyst,5480,3,EMP0008,France,Full-time
+EMP0053,2024-07-25,,Active,Human Resources,2,HR Analyst,2780,4,EMP0006,Brazil,Full-time
+EMP0054,2018-07-18,,Active,Operations,2,HRIS Specialist,3000,3,EMP0008,Portugal,Part-time
+EMP0055,2018-12-20,,Active,Product,1,Data Support Analyst,2590,1,EMP0004,Canada,Full-time
+EMP0056,2018-04-20,,Active,Sales,3,Senior HR Analyst,5370,2,EMP0008,France,Full-time
+EMP0057,2019-05-13,2025-10-19,Terminated,Operations,5,HR Systems Director,6950,1,EMP0003,Brazil,Full-time
+EMP0058,2023-11-09,,Active,Customer Success,3,Senior People Analyst,4050,3,EMP0003,Spain,Full-time
+EMP0059,2025-04-02,2025-11-21,Terminated,Operations,1,HR Assistant,1960,3,EMP0005,France,Full-time
+EMP0060,2020-05-13,,Active,Operations,2,HRIS Specialist,2830,3,EMP0007,Spain,Full-time
+EMP0061,2020-01-04,,Active,Human Resources,5,HR Systems Director,7900,4,EMP0006,Germany,Full-time
+EMP0062,2018-07-02,,Active,Operations,3,Senior People Analyst,3810,4,EMP0001,Portugal,Full-time
+EMP0063,2022-10-10,,Active,Human Resources,1,Data Support Analyst,2580,4,EMP0004,Spain,Full-time
+EMP0064,2026-07-28,2026-09-25,Terminated,Finance,3,Senior HRIS Analyst,3980,3,EMP0002,Germany,Full-time
+EMP0065,2023-03-17,2025-05-04,Terminated,IT,1,HR Assistant,1950,3,EMP0005,Brazil,Full-time
+EMP0066,2026-08-23,,Active,Product,3,Senior People Analyst,4960,3,EMP0002,Canada,Full-time
+EMP0067,2026-06-07,,Active,Human Resources,1,Data Support Analyst,2300,4,EMP0008,France,Part-time
+EMP0068,2020-08-30,,Active,Human Resources,4,HR Manager,5370,4,EMP0005,Netherlands,Full-time
+EMP0069,2025-04-13,,Active,Sales,2,HRIS Specialist,2780,3,EMP0007,Brazil,Full-time
+EMP0070,2021-04-02,2025-06-01,Terminated,IT,3,Senior HR Analyst,4650,4,EMP0002,Canada,Full-time
+EMP0071,2018-06-25,,Active,Human Resources,3,Senior HR Analyst,4670,1,EMP0001,Ireland,Contract
+EMP0072,2019-04-19,,Active,Sales,3,Senior People Analyst,5040,3,EMP0004,Germany,Full-time
+EMP0073,2025-02-19,,Active,Engineering,2,People Reporting Analyst,4130,2,EMP0006,Canada,Full-time
+EMP0074,2019-04-13,2024-08-09,Terminated,Engineering,2,HRIS Specialist,3060,3,EMP0001,Spain,Contract
+EMP0075,2026-02-28,,Active,Operations,3,Senior HR Analyst,3810,5,EMP0008,France,Full-time
+EMP0076,2024-08-21,,Active,Human Resources,4,HR Manager,5750,2,EMP0006,Portugal,Full-time
+EMP0077,2021-02-28,,Active,Engineering,2,HRIS Specialist,3890,5,EMP0002,Netherlands,Full-time
+EMP0078,2022-07-15,,Active,Product,4,People Analytics Lead,5390,4,EMP0006,France,Full-time
+EMP0079,2026-10-08,,On Leave,IT,3,Senior People Analyst,4080,3,EMP0006,Portugal,Full-time
+EMP0080,2023-09-10,,Active,Operations,1,HR Assistant,2870,4,EMP0005,Canada,Full-time
+EMP0081,2019-03-18,,Active,Operations,4,HRIS Manager,5980,3,EMP0001,Portugal,Full-time
+EMP0082,2022-01-02,,Active,Engineering,1,HR Assistant,2780,3,EMP0003,Canada,Full-time
+EMP0083,2024-10-10,,Active,IT,2,HR Analyst,3120,3,EMP0002,Brazil,Full-time
+EMP0084,2024-04-21,2025-07-06,Terminated,Operations,2,HRIS Specialist,3560,4,EMP0001,Spain,Full-time
+EMP0085,2022-12-02,,Active,Customer Success,2,HR Analyst,2980,3,EMP0005,France,Full-time
+EMP0086,2024-10-14,2024-12-21,Terminated,Product,5,HR Systems Director,9470,4,EMP0004,France,Part-time
+EMP0087,2018-12-31,2021-10-31,Terminated,Product,4,HR Manager,5570,4,EMP0007,Ireland,Part-time
+EMP0088,2023-10-15,,Active,Operations,4,HRIS Manager,5380,5,EMP0003,Brazil,Full-time
+EMP0089,2025-09-03,,Active,Engineering,3,Senior People Analyst,4200,5,EMP0004,France,Full-time
+EMP0090,2026-07-05,,Active,Engineering,1,HR Assistant,2300,5,EMP0004,France,Full-time
+EMP0091,2023-12-26,,On Leave,Finance,2,People Reporting Analyst,2780,5,EMP0006,Spain,Part-time
+EMP0092,2018-01-22,,Active,Operations,3,Senior People Analyst,5100,1,EMP0003,Netherlands,Full-time
+EMP0093,2021-03-03,,Active,Human Resources,1,Junior Analyst,2420,2,EMP0006,Spain,Part-time
+EMP0094,2024-06-09,,Active,Customer Success,2,HRIS Specialist,3140,3,EMP0003,Spain,Full-time
+EMP0095,2023-07-25,,Active,IT,1,HR Assistant,2370,3,EMP0004,Brazil,Contract
+EMP0096,2022-05-01,,Active,Customer Success,5,People Analytics Principal,6750,2,EMP0001,Ireland,Full-time
+EMP0097,2021-08-09,,Active,Finance,2,People Reporting Analyst,3560,3,EMP0004,Ireland,Contract
+EMP0098,2019-10-06,,Active,Finance,2,HR Analyst,3370,4,EMP0005,Portugal,Full-time
+EMP0099,2020-01-16,,Active,Engineering,2,HR Analyst,3040,2,EMP0007,France,Full-time
+EMP0100,2021-03-18,2022-02-12,Terminated,IT,2,HRIS Specialist,3510,4,EMP0004,Portugal,Full-time
+EMP0101,2019-07-12,,Active,Product,2,HRIS Specialist,3660,4,EMP0005,Ireland,Full-time
+EMP0102,2020-12-29,,Active,Customer Success,3,Senior People Analyst,4230,2,EMP0008,Brazil,Part-time
+EMP0103,2023-12-12,,Active,Sales,3,Senior HR Analyst,5240,3,EMP0002,Brazil,Full-time
+EMP0104,2019-07-25,,Active,Operations,3,Senior People Analyst,3980,2,EMP0004,Brazil,Full-time
+EMP0105,2026-04-20,,Active,Engineering,2,People Reporting Analyst,3120,3,EMP0005,Ireland,Full-time
+EMP0106,2022-01-09,2025-06-17,Terminated,Customer Success,1,Junior Analyst,2190,4,EMP0002,Canada,Full-time
+EMP0107,2019-06-30,,Active,Operations,1,Data Support Analyst,2150,4,EMP0008,France,Full-time
+EMP0108,2024-12-19,,Active,Finance,2,People Reporting Analyst,2620,2,EMP0003,Netherlands,Full-time
+EMP0109,2025-11-04,,Active,Finance,2,HRIS Specialist,3470,4,EMP0001,Brazil,Full-time
+EMP0110,2021-05-16,,On Leave,Product,3,Senior HR Analyst,5220,3,EMP0007,France,Full-time
+EMP0111,2021-10-31,,Active,Customer Success,3,Senior HR Analyst,4620,4,EMP0004,Germany,Full-time
+EMP0112,2020-07-29,,Active,Sales,5,HR Systems Director,7010,3,EMP0005,Brazil,Part-time
+EMP0113,2022-06-13,,Active,Engineering,3,Senior HRIS Analyst,4280,3,EMP0006,Brazil,Part-time
+EMP0114,2020-11-28,,Active,Customer Success,4,HR Manager,5050,4,EMP0008,Germany,Full-time
+EMP0115,2019-04-12,,Active,Finance,3,Senior People Analyst,4300,5,EMP0006,Brazil,Contract
+EMP0116,2021-02-09,,Active,Engineering,1,Data Support Analyst,2940,4,EMP0003,Brazil,Full-time
+EMP0117,2022-10-16,,Active,Human Resources,3,Senior HR Analyst,3850,3,EMP0002,Germany,Part-time
+EMP0118,2025-05-27,,Active,IT,1,HR Assistant,2320,3,EMP0007,Canada,Full-time
+EMP0119,2024-04-20,2025-08-07,Terminated,Finance,3,Senior People Analyst,4560,5,EMP0008,Spain,Full-time
+EMP0120,2024-09-16,2025-06-28,Terminated,Sales,1,HR Assistant,2550,1,EMP0005,Canada,Full-time
+EMP0121,2025-11-05,2026-09-26,Terminated,Operations,2,HRIS Specialist,3790,1,EMP0005,Ireland,Part-time
+EMP0122,2026-03-27,2026-07-04,Terminated,Finance,2,People Reporting Analyst,2610,4,EMP0001,Germany,Full-time
+EMP0123,2022-02-07,,Active,IT,2,HR Analyst,3850,4,EMP0001,Germany,Contract
+EMP0124,2022-11-01,,On Leave,Human Resources,2,HR Analyst,3520,3,EMP0002,France,Full-time
+EMP0125,2023-02-15,,Active,Human Resources,1,Data Support Analyst,2630,2,EMP0003,Portugal,Full-time
+EMP0126,2023-11-09,,Active,Human Resources,3,Senior HR Analyst,3610,3,EMP0006,France,Full-time
+EMP0127,2023-08-16,,Active,Finance,3,Senior HR Analyst,4590,3,EMP0002,Germany,Part-time
+EMP0128,2019-01-28,2026-02-03,Terminated,Customer Success,2,People Reporting Analyst,3870,4,EMP0003,Germany,Part-time
+EMP0129,2023-07-15,2023-11-21,Terminated,Customer Success,3,Senior HRIS Analyst,5410,3,EMP0004,Germany,Full-time
+EMP0130,2019-04-11,2019-08-29,Terminated,Operations,4,People Analytics Lead,7020,4,EMP0004,Spain,Full-time
+EMP0131,2023-04-11,,Active,Product,2,HR Analyst,4100,2,EMP0005,Brazil,Full-time
+EMP0132,2018-11-14,,Active,Finance,2,HRIS Specialist,3430,1,EMP0006,Brazil,Full-time
+EMP0133,2021-03-27,,Active,IT,3,Senior HR Analyst,4870,3,EMP0008,Spain,Contract
+EMP0134,2022-04-14,2024-01-30,Terminated,Finance,2,HRIS Specialist,4150,2,EMP0006,Canada,Contract
+EMP0135,2022-06-24,2024-01-17,Terminated,Sales,3,Senior HRIS Analyst,4340,5,EMP0006,France,Part-time
+EMP0136,2023-11-01,,Active,Finance,2,HR Analyst,3590,3,EMP0007,France,Part-time
+EMP0137,2022-03-19,,Active,Human Resources,2,People Reporting Analyst,3550,5,EMP0008,Portugal,Full-time
+EMP0138,2023-10-16,2024-11-29,Terminated,Operations,2,HR Analyst,3260,3,EMP0003,Brazil,Full-time
+EMP0139,2020-04-15,,Active,Engineering,3,Senior HR Analyst,4730,4,EMP0002,Ireland,Full-time
+EMP0140,2020-01-26,,Active,Customer Success,4,People Analytics Lead,5830,3,EMP0002,Ireland,Full-time
+EMP0141,2023-11-24,,Active,Customer Success,1,Junior Analyst,2970,5,EMP0008,Netherlands,Full-time
+EMP0142,2023-02-14,,Active,Sales,1,Junior Analyst,2520,2,EMP0001,Spain,Full-time
+EMP0143,2019-10-10,,Active,Operations,2,HRIS Specialist,3100,4,EMP0003,Netherlands,Full-time
+EMP0144,2021-11-15,,Active,Finance,1,Junior Analyst,1930,5,EMP0008,France,Full-time
+EMP0145,2022-02-16,,Active,Customer Success,2,HRIS Specialist,3300,3,EMP0006,France,Full-time
+EMP0146,2024-07-16,,Active,Sales,3,Senior HR Analyst,3640,5,EMP0007,Germany,Full-time
+EMP0147,2021-03-04,,On Leave,IT,2,HR Analyst,3150,3,EMP0002,Spain,Full-time
+EMP0148,2021-02-01,2021-09-27,Terminated,Sales,2,People Reporting Analyst,4150,4,EMP0006,Ireland,Full-time
+EMP0149,2024-09-02,2025-11-02,Terminated,Finance,1,HR Assistant,2170,3,EMP0003,France,Part-time
+EMP0150,2025-09-20,,Active,Sales,2,People Reporting Analyst,3760,5,EMP0007,Ireland,Full-time
+EMP0151,2021-03-03,,On Leave,Finance,3,Senior HR Analyst,5440,4,EMP0005,Brazil,Contract
+EMP0152,2023-08-12,,Active,Product,3,Senior HR Analyst,4690,3,EMP0002,Germany,Full-time
+EMP0153,2022-11-09,,Active,Sales,3,Senior HR Analyst,5420,3,EMP0003,Portugal,Full-time
+EMP0154,2024-09-29,,Active,Human Resources,3,Senior HRIS Analyst,3840,4,EMP0008,Portugal,Part-time
+EMP0155,2023-04-20,,Active,Product,3,Senior HR Analyst,5010,3,EMP0007,Canada,Full-time
+EMP0156,2022-04-10,,On Leave,Engineering,1,Data Support Analyst,2430,4,EMP0005,Germany,Full-time
+EMP0157,2024-06-16,,Active,Product,5,HR Systems Director,6200,4,EMP0007,Canada,Full-time
+EMP0158,2020-02-23,2024-10-31,Terminated,Operations,2,People Reporting Analyst,3760,5,EMP0003,Netherlands,Full-time
+EMP0159,2021-02-17,,Active,Customer Success,4,People Analytics Lead,6190,3,EMP0005,Portugal,Full-time
+EMP0160,2021-12-14,2024-07-07,Terminated,Operations,5,People Analytics Principal,8340,3,EMP0004,Ireland,Full-time
+EMP0161,2024-07-05,2026-04-02,Terminated,Customer Success,1,HR Assistant,2000,3,EMP0005,Portugal,Contract
+EMP0162,2019-09-11,,Active,Human Resources,2,HR Analyst,2710,2,EMP0003,Brazil,Full-time
+EMP0163,2021-10-06,,Active,Sales,2,People Reporting Analyst,3140,4,EMP0002,Netherlands,Full-time
+EMP0164,2018-03-31,2025-06-02,Terminated,Engineering,3,Senior People Analyst,5420,5,EMP0003,Ireland,Full-time
+EMP0165,2019-02-04,,Active,Finance,2,HRIS Specialist,4160,1,EMP0002,France,Full-time
+EMP0166,2018-03-12,,Active,IT,1,Data Support Analyst,2390,3,EMP0004,Netherlands,Contract
+EMP0167,2022-02-22,,Active,Finance,1,Data Support Analyst,2770,3,EMP0003,Brazil,Full-time
+EMP0168,2020-04-08,2026-10-21,Terminated,Product,1,Junior Analyst,2140,5,EMP0002,France,Full-time
+EMP0169,2024-11-10,2025-07-07,Terminated,Sales,5,HR Director,9180,1,EMP0003,Germany,Full-time
+EMP0170,2019-11-06,2020-05-13,Terminated,Product,3,Senior People Analyst,5080,5,EMP0007,Canada,Full-time
+EMP0171,2020-08-06,,Active,Human Resources,2,HRIS Specialist,2900,3,EMP0004,Canada,Full-time
+EMP0172,2021-09-02,,Active,Sales,3,Senior People Analyst,5280,4,EMP0001,Portugal,Full-time
+EMP0173,2021-09-11,,Active,Finance,3,Senior People Analyst,4550,3,EMP0006,Germany,Full-time
+EMP0174,2023-05-06,,Active,Product,2,HRIS Specialist,3610,3,EMP0004,Spain,Part-time
+EMP0175,2021-07-08,,Active,Human Resources,2,People Reporting Analyst,3800,3,EMP0005,Germany,Full-time
+EMP0176,2026-06-25,,Active,Engineering,1,HR Assistant,1850,3,EMP0004,Spain,Full-time
+EMP0177,2022-08-16,,Active,Customer Success,3,Senior HRIS Analyst,4730,4,EMP0004,Canada,Full-time
+EMP0178,2018-11-01,,Active,Sales,1,Data Support Analyst,2210,5,EMP0006,Ireland,Full-time
+EMP0179,2021-05-30,,Active,IT,5,HR Systems Director,8080,4,EMP0007,Canada,Full-time
+EMP0180,2018-11-19,,Active,IT,3,Senior HR Analyst,5580,4,EMP0007,France,Part-time
+EMP0181,2022-10-04,,Active,Finance,1,Junior Analyst,2110,2,EMP0005,Portugal,Contract
+EMP0182,2025-08-16,2025-10-31,Terminated,Engineering,1,Data Support Analyst,2810,4,EMP0005,Germany,Full-time
+EMP0183,2022-11-24,2026-02-12,Terminated,Human Resources,1,Data Support Analyst,2580,4,EMP0008,Spain,Full-time
+EMP0184,2026-01-12,,Active,Sales,5,People Analytics Principal,8260,1,EMP0004,Spain,Part-time
+EMP0185,2022-08-25,2023-03-08,Terminated,Human Resources,1,HR Assistant,1950,4,EMP0008,Portugal,Full-time
+EMP0186,2026-02-01,2026-07-20,Terminated,Operations,4,People Analytics Lead,6770,1,EMP0005,France,Full-time
+EMP0187,2024-10-06,,Active,Operations,2,HRIS Specialist,3660,4,EMP0006,France,Full-time
+EMP0188,2024-03-27,,Active,Finance,5,HR Systems Director,7620,2,EMP0007,France,Full-time
+EMP0189,2023-05-18,2026-09-01,Terminated,Customer Success,2,People Reporting Analyst,3080,4,EMP0001,Portugal,Full-time
+EMP0190,2018-08-15,,On Leave,Operations,1,HR Assistant,2210,3,EMP0006,Germany,Contract
+EMP0191,2018-08-03,,Active,Customer Success,2,HR Analyst,3390,4,EMP0001,Portugal,Full-time
+EMP0192,2019-04-15,2022-11-16,Terminated,Product,3,Senior HRIS Analyst,5430,3,EMP0006,Netherlands,Part-time
+EMP0193,2018-01-18,2026-03-17,Terminated,Customer Success,1,Data Support Analyst,2330,4,EMP0008,Ireland,Full-time
+EMP0194,2018-12-06,,Active,IT,1,HR Assistant,2210,3,EMP0001,Germany,Full-time
+EMP0195,2024-10-31,,Active,Human Resources,3,Senior HR Analyst,5420,2,EMP0008,Spain,Full-time
+EMP0196,2023-11-22,,Active,Engineering,3,Senior People Analyst,5440,5,EMP0004,Canada,Part-time
+EMP0197,2019-03-01,2025-04-29,Terminated,Engineering,3,Senior HR Analyst,5220,3,EMP0005,Canada,Full-time
+EMP0198,2019-11-02,,Active,Customer Success,4,HR Manager,5310,3,EMP0007,Canada,Part-time
+EMP0199,2021-04-05,,Active,Product,1,HR Assistant,2860,3,EMP0007,Netherlands,Full-time
+EMP0200,2026-10-02,,Active,Human Resources,4,HRIS Manager,7100,3,EMP0004,Brazil,Full-time
+EMP0201,2019-11-17,,Active,Human Resources,2,HRIS Specialist,3050,1,EMP0001,France,Contract
+EMP0202,2018-07-15,,Active,Human Resources,3,Senior People Analyst,5200,3,EMP0003,Brazil,Contract
+EMP0203,2020-10-21,,On Leave,Operations,3,Senior HR Analyst,4410,3,EMP0002,Spain,Full-time
+EMP0204,2022-06-17,,Active,Customer Success,4,HR Manager,6910,4,EMP0001,Netherlands,Full-time
+EMP0205,2024-01-29,,Active,Customer Success,2,HRIS Specialist,2690,4,EMP0003,Ireland,Full-time
+EMP0206,2022-04-27,,Active,Operations,4,HRIS Manager,5770,1,EMP0008,France,Part-time
+EMP0207,2021-07-08,,On Leave,Customer Success,5,People Analytics Principal,7030,3,EMP0003,Canada,Full-time
+EMP0208,2020-12-31,,Active,Engineering,4,People Analytics Lead,5290,4,EMP0005,Portugal,Full-time
+EMP0209,2024-11-07,,Active,Operations,2,HRIS Specialist,2840,4,EMP0008,Canada,Full-time
+EMP0210,2024-06-30,,Active,Finance,3,Senior HRIS Analyst,5180,4,EMP0008,Germany,Full-time
+EMP0211,2024-07-10,,Active,Human Resources,1,Junior Analyst,2510,4,EMP0005,Brazil,Full-time
+EMP0212,2026-09-04,,Active,Human Resources,3,Senior People Analyst,5450,3,EMP0002,Brazil,Full-time
+EMP0213,2020-05-30,,On Leave,Human Resources,3,Senior HRIS Analyst,4050,4,EMP0004,Portugal,Full-time
+EMP0214,2020-10-18,,Active,Customer Success,2,HR Analyst,3980,2,EMP0005,Spain,Full-time
+EMP0215,2022-02-18,2026-05-17,Terminated,Finance,2,HRIS Specialist,3900,4,EMP0008,Spain,Full-time
+EMP0216,2024-02-13,2026-04-10,Terminated,Engineering,2,HR Analyst,3420,4,EMP0002,Germany,Full-time
+EMP0217,2018-05-29,,Active,Finance,3,Senior People Analyst,4450,4,EMP0005,Germany,Part-time
+EMP0218,2018-07-22,2023-04-11,Terminated,Operations,3,Senior HRIS Analyst,3760,2,EMP0008,Ireland,Contract
+EMP0219,2020-10-01,2025-02-08,Terminated,Product,5,HR Director,8190,4,EMP0006,France,Full-time
+EMP0220,2025-08-28,2026-01-04,Terminated,Sales,2,People Reporting Analyst,3320,3,EMP0001,Germany,Full-time
+EMP0221,2023-05-12,2024-01-17,Terminated,IT,4,People Analytics Lead,7100,3,EMP0003,Netherlands,Part-time
+EMP0222,2022-12-13,,Active,IT,1,HR Assistant,2740,3,EMP0008,France,Full-time
+EMP0223,2023-07-17,2026-06-05,Terminated,IT,1,Data Support Analyst,2610,4,EMP0006,Canada,Part-time
+EMP0224,2023-07-18,,Active,Finance,3,Senior HR Analyst,4160,3,EMP0003,Canada,Part-time
+EMP0225,2021-12-22,,Active,Product,3,Senior People Analyst,4220,5,EMP0006,Brazil,Full-time
+EMP0226,2025-05-12,2025-09-29,Terminated,Finance,3,Senior HR Analyst,3690,2,EMP0005,Ireland,Full-time
+EMP0227,2018-02-01,2025-12-19,Terminated,Sales,4,HRIS Manager,6820,3,EMP0008,Germany,Full-time
+EMP0228,2025-02-25,,Active,IT,5,HR Director,7910,2,EMP0003,Ireland,Full-time
+EMP0229,2026-08-19,,Active,Operations,2,People Reporting Analyst,2900,3,EMP0007,Germany,Full-time
+EMP0230,2021-05-01,,Active,Finance,3,Senior HR Analyst,4970,4,EMP0003,Brazil,Full-time
+EMP0231,2022-01-29,,Active,Operations,4,HRIS Manager,5830,2,EMP0008,Portugal,Part-time
+EMP0232,2022-03-03,,Active,Product,5,People Analytics Principal,8880,4,EMP0004,Netherlands,Full-time
+EMP0233,2025-11-03,,Active,Product,3,Senior HRIS Analyst,3770,5,EMP0007,Brazil,Full-time
+EMP0234,2024-04-09,,Active,Finance,2,HRIS Specialist,3340,4,EMP0004,France,Full-time
+EMP0235,2018-03-07,2019-10-19,Terminated,Sales,2,HR Analyst,3790,2,EMP0006,Germany,Full-time
+EMP0236,2025-02-07,,Active,Human Resources,2,People Reporting Analyst,3550,2,EMP0004,Germany,Full-time
+EMP0237,2026-03-07,,Active,Customer Success,2,People Reporting Analyst,2960,2,EMP0006,Canada,Full-time
+EMP0238,2024-01-22,,Active,Human Resources,4,HR Manager,5190,5,EMP0007,Brazil,Full-time
+EMP0239,2026-07-13,,Active,Sales,2,HR Analyst,3870,3,EMP0002,Ireland,Full-time
+EMP0240,2026-07-29,,Active,Finance,4,People Analytics Lead,6000,3,EMP0005,Ireland,Full-time
+EMP0241,2020-11-01,,Active,Human Resources,3,Senior HR Analyst,4540,4,EMP0004,Ireland,Full-time
+EMP0242,2023-11-05,2025-05-07,Terminated,Human Resources,2,HRIS Specialist,4180,5,EMP0002,Netherlands,Full-time
+EMP0243,2021-05-02,,Active,Operations,2,HRIS Specialist,2880,4,EMP0008,Portugal,Full-time
+EMP0244,2018-09-24,,On Leave,Product,5,People Analytics Principal,7650,4,EMP0005,Spain,Part-time
+EMP0245,2020-09-04,2024-01-17,Terminated,Customer Success,2,HRIS Specialist,3160,4,EMP0006,Netherlands,Contract
+EMP0246,2019-10-11,,Active,IT,3,Senior People Analyst,5230,4,EMP0003,Netherlands,Full-time
+EMP0247,2026-06-13,,Active,IT,1,Data Support Analyst,2650,2,EMP0005,Ireland,Full-time
+EMP0248,2022-11-30,2023-07-30,Terminated,Product,4,HR Manager,6410,4,EMP0002,Ireland,Full-time
+EMP0249,2024-05-14,,On Leave,Product,3,Senior HRIS Analyst,4590,2,EMP0005,Spain,Part-time
+EMP0250,2024-08-26,,Active,Finance,1,Junior Analyst,2200,3,EMP0008,Spain,Full-time
