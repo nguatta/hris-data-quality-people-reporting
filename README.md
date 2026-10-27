@@ -6,7 +6,7 @@ This independent portfolio project demonstrates how SQL and Power BI can be used
 
 The project uses synthetic HR data containing deliberately introduced data-quality issues. It is designed to simulate common validation tasks performed by HR Data Analysts, HRIS Analysts, and People Analytics teams.
 
-**Project status:** In progress.
+**Project status: Completed — portfolio version.
 
 **Tools:** SQL, SQLite, Power BI, Power Query, and DAX.
 
@@ -69,6 +69,88 @@ The following measures are implemented in the Power BI report.
 Eligibility for People Reporting excludes missing or duplicated
 EmployeeIDs. Other data-quality flags are retained for investigation
 and are not automatically excluded from headcount.
+
+## Key DAX Measures
+
+The Power BI dashboard uses the following measures.
+
+### Total Records
+
+```dax
+Total Records =
+COUNTROWS('employees_quality_export')
+
+Flagged Records =
+CALCULATE(
+    [Total Records],
+    KEEPFILTERS(
+        'employees_quality_export'[has_any_issue_flag] = 1
+    )
+)
+Clean Records =
+CALCULATE(
+    [Total Records],
+    KEEPFILTERS(
+        'employees_quality_export'[has_any_issue_flag] = 0
+    )
+)
+
+Exception Rate =
+DIVIDE([Flagged Records], [Total Records], 0)
+
+Eligible Records =
+CALCULATE(
+    COUNTROWS('employees_quality_export'),
+    KEEPFILTERS(
+        'employees_quality_export'[employee_id_missing_flag] = 0
+    ),
+    KEEPFILTERS(
+        'employees_quality_export'[employee_id_duplicate_flag] = 0
+    )
+)
+
+Active Headcount =
+CALCULATE(
+    DISTINCTCOUNT('employees_quality_export'[EmployeeID]),
+    KEEPFILTERS(
+        'employees_quality_export'[EmploymentStatus] = "Active"
+    ),
+    KEEPFILTERS(
+        'employees_quality_export'[employee_id_missing_flag] = 0
+    ),
+    KEEPFILTERS(
+        'employees_quality_export'[employee_id_duplicate_flag] = 0
+    )
+)
+
+Terminated Employees =
+CALCULATE(
+    DISTINCTCOUNT('employees_quality_export'[EmployeeID]),
+    KEEPFILTERS(
+        'employees_quality_export'[EmploymentStatus] = "Terminated"
+    ),
+    KEEPFILTERS(
+        'employees_quality_export'[employee_id_missing_flag] = 0
+    ),
+    KEEPFILTERS(
+        'employees_quality_export'[employee_id_duplicate_flag] = 0
+    )
+)
+
+
+### 3. Documentar a hipótese sobre EMP0017
+
+Como apresentámos `EMP0017` em Human Resources no gráfico, acrescenta esta nota à secção `Methodological Note`:
+
+```markdown
+The missing department for EMP0017 is displayed as Human Resources
+for illustrative reporting purposes, based on the employee's job title.
+This assignment is an assumption, not a verified source-data correction.
+The original Department field remains missing, and the original
+data-quality flag is preserved.
+
+
+
 
 ## Power BI Dashboard
 
