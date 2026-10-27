@@ -19,7 +19,7 @@ The project uses synthetic HR data containing deliberately introduced data-quali
 - Produce a transparent record of data-quality exceptions.
 - Prepare reliable workforce reporting metrics.
 
-## Planned Data Quality Checks
+## Initial Data Quality Checks Completed
 
 1. Employee ID uniqueness and completeness.
 2. Required-field completeness.
