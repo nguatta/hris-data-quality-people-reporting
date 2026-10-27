@@ -135,43 +135,4 @@ The SQL validation script used to profile employee records and identify data-qua
 
 [View the SQL Data Quality Profile](data/sql/01_data_quality_profile.sql)
 
-## Audit Results
 
-The initial SQL data-quality audit was executed
-successfully using SQLite.
-
-| Metric | Result |
-|---|---:|
-| Total employee records | 250 |
-| Records flagged by at least one rule | 109 |
-| Records with no detected exceptions | 141 |
-| Data-quality exception rate | 43.6% |
-
-## Key Findings
-
-- 57 employee records contain manager references
-  not found in the supplied dataset.
-- 35 records contain ambiguous manager references
-  associated with the duplicated EmployeeID EMP0006.
-- 1 self-referencing manager relationship was identified.
-- 3 records show an employment status and
-  termination date inconsistency.
-
-Manager references that cannot be matched require
-investigation; they are not automatically proof of
-incorrect data.
-
-## Methodology and Limitations
-
-The raw dataset was preserved. SQL rules identify
-records requiring review and do not automatically
-correct source data.
-
-Data-quality flags identify records requiring review;
-they do not establish that records are factually incorrect.
-
-The dataset contains synthetic HR data for portfolio
-learning and does not describe a real organisation.
-### Dataset Disclaimer
-
-This project uses synthetic HR data for portfolio learning. The findings do not describe a real organisation.
