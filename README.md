@@ -52,29 +52,47 @@ self-referencing manager relationship.
 These results describe synthetic data and do not
 represent a real organisation.
 
-## Planned People Reporting Metrics
+## People Reporting Metrics
 
-- Total employee records.
-- Distinct employee IDs.
-- Active headcount.
-- Terminated employee count.
-- Employee records with data-quality issues.
-- Data-quality exception rate.
-- Records passing the defined validation rules.
+The following measures are implemented in the Power BI report.
 
-Metric definitions and denominators will be documented to ensure consistent interpretation.
+| Metric | Result | Definition |
+|---|---:|---|
+| Total employee records | 250 | All source records |
+| Eligible records | 247 | Records with a non-missing, non-duplicated EmployeeID |
+| Active headcount | 164 | Distinct eligible EmployeeIDs with Active status |
+| Terminated employees | 66 | Distinct eligible EmployeeIDs with Terminated status |
+| Flagged records | 109 | Records with at least one data-quality flag |
+| Records with no detected exceptions | 141 | Records where has_any_issue_flag = 0 |
+| Data-quality exception rate | 43.6% | Flagged records divided by total source records |
 
-## Methodology
+Eligibility for People Reporting excludes missing or duplicated
+EmployeeIDs. Other data-quality flags are retained for investigation
+and are not automatically excluded from headcount.
 
-The project will follow a documented workflow:
+## Power BI Dashboard
 
-1. Prepare and inspect the synthetic source data.
-2. Profile data completeness, validity, and uniqueness.
-3. Implement SQL validation rules.
-4. Create an exception report for records requiring review.
-5. Define which records are eligible for reporting.
-6. Build a Power BI dashboard.
-7. Document the results, limitations, and validation rules.
+### 01 — Data Quality Overview
+
+![Data Quality Overview](screenshots/01_data_quality_overview.png)
+
+Displays total records, flagged records, records with no detected
+exceptions, exception rate, flagged records by department, and
+exceptions by issue type.
+
+### 02 — People Reporting
+
+![People Reporting](screenshots/02_people_reporting.png)
+
+Displays eligible records, active headcount, terminated employees,
+active headcount by department, and terminated employees by department.
+
+## Methodological Note
+
+Data-quality flags identify records requiring review; they do not
+establish that records are factually incorrect.
+
+The dataset is synthetic and does not represent a real organisation.
 
 ## Repository Structure
 
