@@ -1,85 +1,79 @@
-# HRIS Data Quality & People Reporting
-
-## Project Overview
-
-This independent portfolio project demonstrates how SQL and Power BI can be used to assess HRIS data quality and prepare reliable People Reporting metrics.
-
-The project uses synthetic HR data containing deliberately introduced data-quality issues. It is designed to simulate common validation tasks performed by HR Data Analysts, HRIS Analysts, and People Analytics teams.
-
-**Project status: Completed — portfolio version.
-
-**Tools:** SQL, SQLite, Power BI, Power Query, and DAX.
-
-## Business Objectives
-
-- Assess the completeness and consistency of employee records.
-- Identify duplicate employee IDs and missing mandatory fields.
-- Detect invalid dates and inconsistent employment statuses.
-- Validate salary values and job-level classifications.
-- Produce a transparent record of data-quality exceptions.
-- Prepare reliable workforce reporting metrics.
-
-## Initial Data Quality Checks Completed
-
-1. Employee ID uniqueness and completeness.
-2. Required-field completeness.
-3. Valid hire dates and termination dates.
-4. Consistency between employment status and termination date.
-5. Positive and valid salary values.
-6. Valid job levels and performance ratings.
-7. Consistency of manager references.
-
-## Initial SQL Audit Results
-
-The initial SQL data-quality audit was executed
-successfully using SQLite.
-
-| Metric | Result |
-|---|---:|
-| Total employee records | 250 |
-| Records flagged by at least one rule | 109 |
-| Records with no detected exceptions | 141 |
-| Data-quality exception rate | 43.6% |
-
-The audit identified 24 exception types with
-non-zero counts across the implemented checks.
-
-Key findings include 57 unmatched manager references,
-35 ambiguous manager references associated with
-the duplicated EmployeeID EMP0006, and one
-self-referencing manager relationship.
-
-These results describe synthetic data and do not
-represent a real organisation.
-
-## People Reporting Metrics
-
-The following measures are implemented in the Power BI report.
-
-| Metric | Result | Definition |
-|---|---:|---|
-| Total employee records | 250 | All source records |
-| Eligible records | 247 | Records with a non-missing, non-duplicated EmployeeID |
-| Active headcount | 164 | Distinct eligible EmployeeIDs with Active status |
-| Terminated employees | 66 | Distinct eligible EmployeeIDs with Terminated status |
-| Flagged records | 109 | Records with at least one data-quality flag |
-| Records with no detected exceptions | 141 | Records where has_any_issue_flag = 0 |
-| Data-quality exception rate | 43.6% | Flagged records divided by total source records |
-
-Eligibility for People Reporting excludes missing or duplicated
-EmployeeIDs. Other data-quality flags are retained for investigation
-and are not automatically excluded from headcount.
-
-## Key DAX Measures
-
-The Power BI dashboard uses the following measures.
-
-### Total Records
-
+HRIS Data Quality & People Reporting
+An independent portfolio project using SQL, SQLite, Power Query, Power BI, and DAX to audit synthetic HR information and prepare transparent workforce reporting metrics.
+> **Project status:** Completed — portfolio version. The Power BI report is documented with static screenshots; a public Power BI Service link has not been added.
+Project Overview
+HR teams rely on employee data for workforce reporting and operational decisions. Missing identifiers, duplicate employee IDs, invalid dates, inconsistent employment statuses, unexpected department values, and unresolved manager references can reduce confidence in reports.
+This project demonstrates a practical workflow for identifying HRIS data-quality exceptions, documenting findings, and presenting selected workforce metrics. The dataset is synthetic and contains deliberately introduced issues; it does not represent a real organisation.
+Objectives
+Assess completeness, validity, and consistency in employee records.
+Identify missing and duplicate employee IDs and other data-quality exceptions.
+Check hire and termination dates, employment status, salary values, job levels, and manager references.
+Produce a traceable exception overview without silently changing the source dataset.
+Define transparent eligibility rules for basic People Reporting metrics.
+Present the audit and reporting results in a two-page Power BI dashboard.
+Tools
+SQLite / DB Browser for SQLite — SQL profiling and validation.
+Power Query — import and presentation transformations.
+Power BI — dashboard visuals.
+DAX — reporting measures.
+Dataset and Method
+The source dataset contains 250 synthetic employee records. The raw table `employees_raw` was preserved during SQL profiling. The SQL script creates a temporary quality view, `v_employees_quality`, with record-level flags and derived fields used in the audit.
+The implemented controls are organised into seven areas:
+Employee ID uniqueness and completeness.
+Required-field completeness and approved values.
+Hire and termination date validity.
+Consistency between employment status and termination date.
+Salary validity and illustrative reference bands.
+Job-level and performance-rating checks.
+Manager-reference consistency.
+The salary bands are illustrative synthetic validation rules, not market benchmarks. Date checks use the fixed as-of date 26 October 2026 to make the SQL results reproducible.
+SQL Audit Results
+The initial SQL audit executed successfully in SQLite.
+Metric	Result	Definition
+Total employee records	250	All source rows analysed
+Records flagged by at least one rule	109	Rows where at least one implemented quality flag is set
+Records with no implemented rule triggered	141	Rows where `has_any_issue_flag = 0`
+Data-quality exception rate	43.6%	Flagged source rows divided by all source rows (`109 / 250`)
+Exception types with non-zero counts	24	Implemented individual checks with at least one occurrence
+These are row counts, not a count of every individual issue. A row can trigger more than one rule; therefore, counts by issue type should not be summed to infer the number of unique affected records. A row with no flag is not guaranteed to be completely error-free; it means only that none of the implemented rules was triggered.
+Key Findings
+57 records contain manager references that could not be matched to an employee in the supplied dataset.
+35 records contain ambiguous manager references to `EMP0006`, an employee ID that appears in two source rows.
+1 self-referencing manager relationship was identified.
+3 records were flagged for an employment-status and termination-date inconsistency.
+The audit also identified missing required values, invalid dates or statuses, invalid job levels, non-positive salaries, salaries outside illustrative reference bands, and an unapproved department value (`Human Capital`).
+An unmatched manager reference is not automatically proof of incorrect data; it may refer to a person outside the supplied dataset. Exceptions should be investigated against an authoritative source before any source-data correction is made.
+See the detailed data-quality findings for the findings and recommended follow-up actions.
+People Reporting Metrics
+The Power BI report includes the following measures:
+Metric	Result	Definition
+Total records	250	All source rows
+Eligible records	247	Rows with a non-missing, non-duplicated `EmployeeID`
+Active headcount	164	Distinct eligible employee IDs whose status is `Active`
+Terminated employees	66	Distinct eligible employee IDs whose status is `Terminated`
+Flagged records	109	Rows with at least one quality flag
+Records with no detected exceptions	141	Rows where `has_any_issue_flag = 0`
+Data-quality exception rate	43.6%	Flagged rows divided by all source rows
+For People Reporting, an employee row is eligible only when `employee_id_missing_flag = 0` and `employee_id_duplicate_flag = 0`. Other quality flags are retained for investigation and are not automatically excluded from headcount. The active and terminated counts are distinct-ID measures and refer to the status values in this synthetic dataset; they are not turnover or attrition rates.
+Power BI Dashboard
+01 — Data Quality Overview
+![Data Quality Overview](screenshots/01_data_quality_overview.png)
+This page presents total records, flagged records, records with no detected exceptions, and exception rate. It also shows flagged records by department and exception counts by issue type.
+02 — People Reporting
+![People Reporting](screenshots/02_people_reporting.png)
+This page presents eligible records, active headcount, terminated employees, active headcount by department, and terminated employees by department.
+Department presentation note
+In the Power BI presentation layer, the missing department for `EMP0017` is displayed as Human Resources for illustrative reporting purposes, based on the employee's `HR Assistant` job title. This is an assumption, not a verified source-data correction. The original `Department` value remains missing, and the original data-quality flag is preserved. The source CSV and SQL audit results should not be interpreted as having been corrected by this display-only mapping.
+The value `Human Capital` is shown as unapproved because it falls outside the department values allowed by the implemented validation rule. It is retained in the visual rather than hidden.
+Key DAX Measures
+The measures below are used by the report. They assume the imported table is named `employees_quality_export`.
+Total Records
 ```dax
 Total Records =
 COUNTROWS('employees_quality_export')
-
+```
+Flagged Records
+```dax
 Flagged Records =
 CALCULATE(
     [Total Records],
@@ -87,6 +81,9 @@ CALCULATE(
         'employees_quality_export'[has_any_issue_flag] = 1
     )
 )
+```
+Clean Records
+```dax
 Clean Records =
 CALCULATE(
     [Total Records],
@@ -94,10 +91,15 @@ CALCULATE(
         'employees_quality_export'[has_any_issue_flag] = 0
     )
 )
-
+```
+Exception Rate
+```dax
 Exception Rate =
 DIVIDE([Flagged Records], [Total Records], 0)
-
+```
+Format this measure as a percentage.
+Eligible Records
+```dax
 Eligible Records =
 CALCULATE(
     COUNTROWS('employees_quality_export'),
@@ -108,7 +110,9 @@ CALCULATE(
         'employees_quality_export'[employee_id_duplicate_flag] = 0
     )
 )
-
+```
+Active Headcount
+```dax
 Active Headcount =
 CALCULATE(
     DISTINCTCOUNT('employees_quality_export'[EmployeeID]),
@@ -122,7 +126,9 @@ CALCULATE(
         'employees_quality_export'[employee_id_duplicate_flag] = 0
     )
 )
-
+```
+Terminated Employees
+```dax
 Terminated Employees =
 CALCULATE(
     DISTINCTCOUNT('employees_quality_export'[EmployeeID]),
@@ -136,48 +142,8 @@ CALCULATE(
         'employees_quality_export'[employee_id_duplicate_flag] = 0
     )
 )
-
-
-### 3. Documentar a hipótese sobre EMP0017
-
-Como apresentámos `EMP0017` em Human Resources no gráfico, acrescenta esta nota à secção `Methodological Note`:
-
-```markdown
-The missing department for EMP0017 is displayed as Human Resources
-for illustrative reporting purposes, based on the employee's job title.
-This assignment is an assumption, not a verified source-data correction.
-The original Department field remains missing, and the original
-data-quality flag is preserved.
-
-
-
-
-## Power BI Dashboard
-
-### 01 — Data Quality Overview
-
-![Data Quality Overview](screenshots/01_data_quality_overview.png)
-
-Displays total records, flagged records, records with no detected
-exceptions, exception rate, flagged records by department, and
-exceptions by issue type.
-
-### 02 — People Reporting
-
-![People Reporting](screenshots/02_people_reporting.png)
-
-Displays eligible records, active headcount, terminated employees,
-active headcount by department, and terminated employees by department.
-
-## Methodological Note
-
-Data-quality flags identify records requiring review; they do not
-establish that records are factually incorrect.
-
-The dataset is synthetic and does not represent a real organisation.
-
-## Repository Structure
-
+```
+Repository Structure
 ```text
 hris-data-quality-people-reporting/
 ├── data/
@@ -188,33 +154,28 @@ hris-data-quality-people-reporting/
 │       └── README.md
 ├── reports/
 │   └── data_quality_findings.md
+├── screenshots/
+│   ├── README.md
+│   ├── 01_data_quality_overview.png
+│   └── 02_people_reporting.png
 └── README.md
 ```
-- `data/` — synthetic HR employee dataset and data dictionary.
-- `data/sql/` — SQL scripts for data profiling and quality validation.
-- `reports/` — documented data-quality findings and recommended actions.
-- `README.md` — project overview, objectives, methodology, and documentation links.
-
-## Data Privacy and Limitations
-
-All data will be synthetic and created for learning and portfolio demonstration.
-
-The project does not represent an actual company's HRIS implementation. Data-quality flags identify records requiring review; they do not automatically establish that the underlying records are factually incorrect.
-
-Reporting results will be documented with their definitions, assumptions, and limitations.
-
-## Project Documentation
-
-### HRIS Data Quality Findings
-
-The initial SQL audit results, key data-quality issues, and recommended follow-up actions are documented in the following report:
-
-[Read the HRIS Data Quality Findings](reports/data_quality_findings.md)
-
-### SQL Analysis
-
-The SQL validation script used to profile employee records and identify data-quality exceptions is available here:
-
-[View the SQL Data Quality Profile](data/sql/01_data_quality_profile.sql)
-
-
+`data/` — synthetic source dataset and data dictionary.
+`data/sql/` — SQL profiling and validation script, plus SQL usage notes.
+`reports/` — detailed audit findings and recommended follow-up actions.
+`screenshots/` — static captures of the two Power BI report pages.
+`README.md` — project overview, results, methodology, measures, and dashboard screenshots.
+Limitations and Data Privacy
+All records are synthetic and intended for learning and portfolio demonstration.
+Quality flags identify records requiring review; they do not establish that records are factually incorrect.
+The source dataset was preserved during SQL checks. The `Department Display` mapping for `EMP0017` is a presentation-only assumption and must not be mistaken for a verified correction.
+Salary reference bands are illustrative and are not market benchmarks.
+The dashboard is documented with static screenshots. A public interactive Power BI Service link is not included in this repository version.
+Project Files
+SQL data-quality profile
+SQL usage notes
+Detailed data-quality findings
+Source synthetic employee dataset
+Data dictionary
+---
+This project demonstrates an auditable workflow from HR data validation to workforce reporting, with explicit definitions, transparent assumptions, and documented limitations.
