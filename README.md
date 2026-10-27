@@ -29,6 +29,29 @@ The project uses synthetic HR data containing deliberately introduced data-quali
 6. Valid job levels and performance ratings.
 7. Consistency of manager references.
 
+## Initial SQL Audit Results
+
+The initial SQL data-quality audit was executed
+successfully using SQLite.
+
+| Metric | Result |
+|---|---:|
+| Total employee records | 250 |
+| Records flagged by at least one rule | 109 |
+| Records with no detected exceptions | 141 |
+| Data-quality exception rate | 43.6% |
+
+The audit identified 24 exception types with
+non-zero counts across the implemented checks.
+
+Key findings include 57 unmatched manager references,
+35 ambiguous manager references associated with
+the duplicated EmployeeID EMP0006, and one
+self-referencing manager relationship.
+
+These results describe synthetic data and do not
+represent a real organisation.
+
 ## Planned People Reporting Metrics
 
 - Total employee records.
